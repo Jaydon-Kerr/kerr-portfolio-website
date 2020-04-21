@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/*
+Theme Name: JK Portfolio
+Author: Jaydon Kerr
+Description: Custom portfolio theme
+Version: 1.0
+License: Creative Commons
+License URI: https://creativecommons.org/licenses/
+Tags: Portfolio
+*/
+/* Less CSS variables */
+/* Color */
+/*
+Font styles start
+=====================================================================
+*/
+/*@font-face 
+{
+    font-family: 'Novecento';
+    src: url('fonts/Novecentowide-Bold.ttf')
+}*/
+html,
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Novecento', sans-serif;
+}
+h1 {
+  font-size: 35px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 25px;
+}
+h4 {
+  font-size: 22px;
+}
+h5 {
+  font-size: 19px;
+}
+h6 {
+  font-size: 16px;
+}
+/*
+Font styles end
+=====================================================================
+*/
+/*
+Nav styles start
+=====================================================================
+*/
+nav {
+  float: left;
+  width: 30%;
+}
+/*
+Nav styles end
+=====================================================================
+*/
+/*
+Main styles start
+=====================================================================
+*/
+main {
+  background-color: #dedad1;
+  float: left;
+  width: 70%;
+}
+/*
+Main styles end
+=====================================================================
+*/
+/*
+book-nav styles start
+=====================================================================
+*/
+/*
+book-nav styles end
+=====================================================================
+*/
+/*
+color styles start
+=====================================================================
+*/
+.color {
+  background-color: #ffffff;
+}
+/* Modifiers */
+.color--grey {
+  background-color: #dedad1;
+}
+/*
+color styles end
+=====================================================================
+*/
+/*
+container styles start
+=====================================================================
+*/
+.container {
+  margin: auto;
+}
+/*
+container styles end
+=====================================================================
+*/
+/*
+showcase-element styles start
+=====================================================================
+*/
+/*
+showcase-element styles end
+=====================================================================
+*/
