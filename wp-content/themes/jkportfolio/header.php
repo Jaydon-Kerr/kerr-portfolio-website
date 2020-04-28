@@ -6,17 +6,18 @@
 		<?php wp_head(); ?>
 </head>
 <body>
-	<!-- header will float left -->
-	<header>
-		<nav>
-			<a href="#">
-				<h1>Jaydon</h1>
-				<h1>Kerr</h1>
-			</a>
-			<ul>
-				<li><a href="#">Portfolio</a></li>
-				<li><a href="#">About</a></li>
-			</ul>
-		</nav>
-	</header>
+	<div class="container">
+		<!-- header will float left -->
+		<header id="left-bar">
+			<nav>
+				<a href="#">
+					<h1 class="large-heading">Jaydon</h1>
+					<h1 class="large-heading">Kerr</h1>
+				</a>
+				<ul>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">About</a></li>
+				</ul>
+			</nav>
+		</header>
 		

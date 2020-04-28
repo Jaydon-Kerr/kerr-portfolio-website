@@ -13,6 +13,11 @@ Tags: Portfolio
 @white: #ffffff;
 @white-grey: #dedad1;
 
+@dark-blue: #2e373e;
+@black-blue: #151e24;
+@teal: #4ab38a;
+@green: #98da7e;
+@yellow: #f2d85b;
 /*
 Font styles start
 =====================================================================
@@ -25,6 +30,16 @@ Font styles start
 html, p
 {
 	font-family: 'Open Sans', sans-serif;
+}
+html
+{
+	height: 100%;
+}
+body
+{
+	min-height: 100%;
+	height: 100%;
+	background-color: @black-blue;
 }
 h1, h2, h3, h4, h5, h6
 {
@@ -59,13 +74,24 @@ Font styles end
 =====================================================================
 */
 /*
+heading styles start
+=====================================================================
+*/
+.large-heading
+{
+	font-size: 52px;
+}
+/*
+heading styles end
+=====================================================================
+*/
+/*
 Nav styles start
 =====================================================================
 */
 nav
 {
-	float: left;
-	width: 30%;
+	
 }
 /*
 Nav styles end
@@ -77,9 +103,9 @@ Main styles start
 */
 main
 {
-	background-color: @white-grey;
+	/*background-color: @white-grey;
 	float: left;
-	width: 70%;
+	width: 70%;*/
 }
 /*
 Main styles end
@@ -89,26 +115,17 @@ Main styles end
 book-nav styles start
 =====================================================================
 */
-
+.book-nav
+{
+}
+.book-nav__link
+{
+	/*padding-left: 0.2em;
+	padding-right: 0.2em;*/
+	/*float: left;*/
+}
 /*
 book-nav styles end
-=====================================================================
-*/
-/*
-color styles start
-=====================================================================
-*/
-.color
-{
-	background-color: @white;
-}
-/* Modifiers */
-.color--grey
-{
-	background-color: @white-grey;
-}
-/*
-color styles end
 =====================================================================
 */
 /*
@@ -117,21 +134,130 @@ container styles start
 */
 .container
 {
+	height: 100%;
 	margin:auto;
+	width: 80em;
 }
 /*
 container styles end
 =====================================================================
 */
 /*
-showcase-element styles start
+bars styles start
 =====================================================================
 */
-.showcase-element
+#left-bar
+{
+	float: left;
+	width: 24%;
+	margin-right: 1%;
+	min-height: 100%;
+	height: 100%;
+	/*temporary*/
+	background-color: @dark-blue;
+}
+#right-bar
+{
+	float: left;
+	width: 74%;
+	height: 100%;
+	margin-left: 1%;
+	overflow: scroll;
+	/* Hides bottom scroll bar*/
+	overflow-x: hidden;
+}
+/* experimental hide scroll bar  */
+/*#right-bar
+{
+	-ms-overflow-style: none;
+}
+#right-bar::-webkit-scrollbar
+{
+	display: none;
+}*/
+/*
+bars styles end
+=====================================================================
+*/
+/*
+content-header styles start
+=====================================================================
+*/
+.content-header
+{
+	background-color: @dark-blue;
+}
+/* Elements */
+
+/* Modifiers */
+/*
+content-header styles end
+=====================================================================
+*/
+/*
+content-project styles start
+=====================================================================
+*/
+.content-project
+{
+	background-color: @teal;
+}
+/* Elements */
+
+/* Modifiers */
+.content-project--green
+{
+	background-color: @green;
+}
+.content-project--yellow
+{
+	background-color: @yellow;
+}
+/*
+content-project styles end
+=====================================================================
+*/
+/*
+video styles start
+=====================================================================
+*/
+video
+{
+	width: 100%;
+	height: 56.25%;
+}
+/* Elements */
+
+/* Modifiers */
+/*
+video styles end
+=====================================================================
+*/
+/*
+section styles start
+=====================================================================
+*/
+/* Blocks */
+section
 {
 	
 }
+/* Elements */
+
+/* Modifiers */
 /*
-showcase-element styles end
+section styles end
+=====================================================================
+*/
+/*
+misc styles start
+=====================================================================
+*/
+.centered
+{
+	text-align: center;
+}
+/*
+misc styles end
 =====================================================================
 */
