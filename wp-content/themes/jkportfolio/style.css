@@ -10,26 +10,27 @@ Tags: Portfolio
 */
 /* Less CSS variables */
 /* Color */
+/* main colors */
+/* teal website section colors */
+/* green javascript section colors */
+/* yellow graphics section colors */
 /*
 Font styles start
 =====================================================================
 */
-/*@font-face 
-{
-    font-family: 'Novecento';
-    src: url('fonts/Novecentowide-Bold.ttf')
-}*/
-html,
-p {
-  font-family: 'Open Sans', sans-serif;
-}
 html {
   height: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
 }
 body {
   min-height: 100%;
   height: 100%;
   background-color: #151e24;
+}
+p,
+a {
+  font-size: 19px;
 }
 h1,
 h2,
@@ -37,7 +38,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Novecento', sans-serif;
+  /*font-family: 'Novecento', sans-serif;*/
 }
 h1 {
   font-size: 35px;
@@ -56,6 +57,10 @@ h5 {
 }
 h6 {
   font-size: 16px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 /*
 Font styles end
@@ -98,9 +103,10 @@ book-nav styles start
 =====================================================================
 */
 .book-nav__link {
-  /*padding-left: 0.2em;
-	padding-right: 0.2em;*/
-  /*float: left;*/
+  text-decoration: none;
+}
+.book-nav__list li {
+  display: inline-block;
 }
 /*
 book-nav styles end
@@ -129,8 +135,8 @@ bars styles start
   margin-right: 1%;
   min-height: 100%;
   height: 100%;
-  /*temporary*/
   background-color: #2e373e;
+  color: #4ac3be;
 }
 #right-bar {
   float: left;
@@ -160,6 +166,7 @@ content-header styles start
 */
 .content-header {
   background-color: #2e373e;
+  color: #4ac3be;
 }
 /* Elements */
 /* Modifiers */
@@ -172,10 +179,24 @@ content-project styles start
 =====================================================================
 */
 .content-project {
-  background-color: #4ab38a;
+  color: white;
+  text-align: center;
 }
 /* Elements */
+.content-project__container {
+  margin: 1.5em;
+  padding: 1em;
+}
+.content-project__image {
+  width: 100%;
+}
 /* Modifiers */
+.content-project--teal {
+  background-color: #4ab38a;
+}
+.content-project__container--teal {
+  background-color: #1d1d35;
+}
 .content-project--green {
   background-color: #98da7e;
 }
@@ -217,6 +238,10 @@ misc styles start
 */
 .centered {
   text-align: center;
+}
+.highlight {
+  color: #98da7e;
+  font-weight: normal;
 }
 /*
 misc styles end

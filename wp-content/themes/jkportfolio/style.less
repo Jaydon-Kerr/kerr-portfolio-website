@@ -13,27 +13,28 @@ Tags: Portfolio
 @white: #ffffff;
 @white-grey: #dedad1;
 
+/* main colors */
 @dark-blue: #2e373e;
 @black-blue: #151e24;
+@light-blue: #4AC3BE;
+
+/* teal website section colors */
 @teal: #4ab38a;
+@teal-dark-blue: #1D1D35;
+/* green javascript section colors */
 @green: #98da7e;
+
+/* yellow graphics section colors */
 @yellow: #f2d85b;
 /*
 Font styles start
 =====================================================================
 */
-/*@font-face 
-{
-    font-family: 'Novecento';
-    src: url('fonts/Novecentowide-Bold.ttf')
-}*/
-html, p
-{
-	font-family: 'Open Sans', sans-serif;
-}
 html
 {
 	height: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
 }
 body
 {
@@ -41,9 +42,13 @@ body
 	height: 100%;
 	background-color: @black-blue;
 }
+p, a
+{
+	font-size: 19px;
+}
 h1, h2, h3, h4, h5, h6
 {
-	font-family: 'Novecento', sans-serif;
+	/*font-family: 'Novecento', sans-serif;*/
 }
 h1
 {
@@ -68,6 +73,11 @@ h5
 h6
 {
 	font-size: 16px;
+}
+a
+{
+	text-decoration: none;
+	color: inherit;
 }
 /*
 Font styles end
@@ -117,12 +127,18 @@ book-nav styles start
 */
 .book-nav
 {
+	
 }
 .book-nav__link
 {
-	/*padding-left: 0.2em;
-	padding-right: 0.2em;*/
-	/*float: left;*/
+	text-decoration: none;
+}
+.book-nav__list
+{
+	li
+	{
+		display: inline-block;
+	}
 }
 /*
 book-nav styles end
@@ -153,8 +169,8 @@ bars styles start
 	margin-right: 1%;
 	min-height: 100%;
 	height: 100%;
-	/*temporary*/
 	background-color: @dark-blue;
+	color: @light-blue;
 }
 #right-bar
 {
@@ -186,6 +202,7 @@ content-header styles start
 .content-header
 {
 	background-color: @dark-blue;
+	color: @light-blue;
 }
 /* Elements */
 
@@ -200,11 +217,30 @@ content-project styles start
 */
 .content-project
 {
-	background-color: @teal;
+	color: white;
+	text-align: center;
 }
 /* Elements */
-
+.content-project__container
+{
+	margin: 1.5em;
+	padding: 1em;
+}
+.content-project__image
+{
+	width: 100%;
+}
 /* Modifiers */
+
+.content-project--teal
+{
+	background-color: @teal;
+}
+.content-project__container--teal
+{
+	background-color: @teal-dark-blue;
+}
+
 .content-project--green
 {
 	background-color: @green;
@@ -256,6 +292,11 @@ misc styles start
 .centered
 {
 	text-align: center;
+}
+.highlight
+{
+	color: @green;
+	font-weight: normal;
 }
 /*
 misc styles end
