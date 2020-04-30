@@ -3,7 +3,7 @@
 
 		<!-- right float content -->
 		<main id="right-bar">
-			<div class="content-header">
+			<div class="content-header container">
 				<h1>Hello, I'm <span class="highlight">Jaydon</span>.</h1>
 				<h1>I'm a <span class="highlight">web designer</span> and <span class="highlight">developer</span>.</h1>
 				<video width="1280" height="720" controls>
@@ -26,8 +26,8 @@
 				</div>
 			</div>
 			<div>
-				<div class="content-project content-project--teal">
-					<h2>Websites</h2>
+				<div class="content-project content-project--teal container">
+					<h1>Websites</h1>
 
 					<?php 
 						

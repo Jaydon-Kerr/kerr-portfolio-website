@@ -61,6 +61,7 @@ h6 {
 a {
   text-decoration: none;
   color: inherit;
+  font-size: 22px;
 }
 /*
 Font styles end
@@ -71,7 +72,7 @@ heading styles start
 =====================================================================
 */
 .large-heading {
-  font-size: 52px;
+  font-size: 45px;
 }
 /*
 heading styles end
@@ -81,6 +82,23 @@ heading styles end
 Nav styles start
 =====================================================================
 */
+#main-nav {
+  padding-top: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+#main-nav li {
+  padding-bottom: 1em;
+}
+/* Elements */
+.main-nav__main-link {
+  padding-bottom: 0.8em;
+}
+.main-nav__footer {
+  padding-left: 1em;
+  position: absolute;
+  bottom: 1em;
+}
 /*
 Nav styles end
 =====================================================================
@@ -117,12 +135,26 @@ container styles start
 =====================================================================
 */
 .container {
-  height: 100%;
-  margin: auto;
-  width: 80em;
+  padding: 3em;
 }
+/* Modifiers */
 /*
 container styles end
+=====================================================================
+*/
+/*
+wrapper styles start
+=====================================================================
+*/
+.wrapper {
+  width: 80em;
+  margin: auto;
+  /*make wrapper take full height of screen*/
+  height: 100%;
+  min-height: 100%;
+}
+/*
+wrapper styles end
 =====================================================================
 */
 /*
@@ -184,8 +216,9 @@ content-project styles start
 }
 /* Elements */
 .content-project__container {
-  margin: 1.5em;
-  padding: 1em;
+  padding: 1.5em;
+  margin-top: 3em;
+  border-radius: 8px;
 }
 .content-project__image {
   width: 100%;
@@ -214,6 +247,7 @@ video styles start
 video {
   width: 100%;
   height: 56.25%;
+  border-radius: 8px;
 }
 /* Elements */
 /* Modifiers */
@@ -241,7 +275,7 @@ misc styles start
 }
 .highlight {
   color: #98da7e;
-  font-weight: normal;
+  /*font-weight: normal;*/
 }
 /*
 misc styles end
