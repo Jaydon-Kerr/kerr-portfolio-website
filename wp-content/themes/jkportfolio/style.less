@@ -48,7 +48,7 @@ p, a
 }
 h1, h2, h3, h4, h5, h6
 {
-	/*font-family: 'Novecento', sans-serif;*/
+	/*font-family: sans-serif;*/
 }
 h1
 {
@@ -74,14 +74,23 @@ h6
 {
 	font-size: 16px;
 }
+/*
+link styles start
+=====================================================================
+*/
 a
 {
 	text-decoration: none;
 	color: inherit;
-	font-size: 22px;
+	font-size: 25px;
+	transition: color .25s;
+}
+a:hover
+{
+	color: @green;
 }
 /*
-Font styles end
+link styles end
 =====================================================================
 */
 /*
@@ -156,6 +165,8 @@ book-nav styles start
 	li
 	{
 		display: inline-block;
+		padding-left: 2em;
+		padding-right: 2em;
 	}
 }
 /*
@@ -208,6 +219,7 @@ bars styles start
 }
 #right-bar
 {
+	scroll-behavior: smooth;
 	float: left;
 	width: 74%;
 	height: 100%;
@@ -259,7 +271,7 @@ content-project styles start
 {
 	padding: 1.5em;
 	margin-top: 3em;
-	border-radius: 8px;
+	/*border-radius: 8px;*/
 }
 .content-project__image
 {
@@ -296,7 +308,7 @@ video
 {
 	width: 100%;
 	height: 56.25%;
-	border-radius: 8px;
+	/*border-radius: 8px;*/
 }
 /* Elements */
 
@@ -333,6 +345,14 @@ misc styles start
 {
 	color: @green;
 	/*font-weight: normal;*/
+}
+.pad-top
+{
+	padding-top: 1em;
+}
+.pad-bot
+{
+	padding-bottom: 2em;
 }
 /*
 misc styles end

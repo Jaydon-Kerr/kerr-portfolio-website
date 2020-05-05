@@ -6,27 +6,28 @@
 			<div class="content-header container">
 				<h1>Hello, I'm <span class="highlight">Jaydon</span>.</h1>
 				<h1>I'm a <span class="highlight">web designer</span> and <span class="highlight">developer</span>.</h1>
+				<br>
 				<video width="1280" height="720" controls>
 					<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
 					Your browser does not support video tags - sad day :(
 				</video>
 				<!-- downward arrow icon goes here -->
-				<div class="centered">
-					<p>See what I can do.</p>
-					<i class="fas fa-long-arrow-alt-down fa-5x"></i>
+				<div class="centered pad-bot">
+					<h3 class="pad-top pad-bot">See what I can do.</h3>
+					<i class="fas fa-long-arrow-alt-down fa-3x"></i>
 				</div>
 				
 
 				<div class="book-nav centered">
 					<ul class="book-nav__list">
-						<li><a href="#" class="book-nav__link">Websites</a></li>
-						<li><a href="#" class="book-nav__link">JavaScript/jQuery API's</a></li>
-						<li><a href="#" class="book-nav__link">Graphics</a></li>
+						<li><a href="#websites" class="book-nav__link">Websites</a></li>
+						<li><a href="#javascript" class="book-nav__link">JavaScript</a></li>
+						<li><a href="#graphics" class="book-nav__link">Graphics</a></li>
 					</ul>
 				</div>
 			</div>
 			<div>
-				<div class="content-project content-project--teal container">
+				<div id="websites" class="content-project content-project--teal container">
 					<h1>Websites</h1>
 
 					<?php 
@@ -111,10 +112,10 @@
 					?>
 
 				</div>
-				<div class="content-project content-project--green">
+				<div id="javascript" class="content-project content-project--green">
 					<h2>JavaScript/jQuery API's</h2>
 				</div>
-				<div class="content-project content-project--yellow">
+				<div id="graphics" class="content-project content-project--yellow">
 					<h2>Graphics</h2>
 				</div>
 			</div>

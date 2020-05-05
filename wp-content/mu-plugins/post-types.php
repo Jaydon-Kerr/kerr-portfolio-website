@@ -1,7 +1,7 @@
 <?php
 function post_types()
 {
-	// Project custom post type
+	// Website custom post type
 	register_post_type('website', array(
 		'labels' => array(
 			'name' => 'Websites',
@@ -12,10 +12,41 @@ function post_types()
 		),
 		'description' => 'Website custom content type',
 		'public' => true,
-		'show_in_rest' => true,
-		'menu_icon' => 'dashicons-hammer',
+		'menu_icon' => 'dashicons-admin-site-alt2',
 		'rewrite' => array(
 			'slug' => 'websites'
+		)
+	));
+	// javascript custom post type
+	register_post_type('javascript', array(
+		'labels' => array(
+			'name' => 'JavaScript',
+			'add_new_item' => 'Add New JavaScript',
+			'edit_item' => 'Edit JavaScript',
+			'all_items' => 'All JavaScript',
+			'singular_name' => 'JavaScript'
+		),
+		'description' => 'JavaScript custom content type',
+		'public' => true,
+		'menu_icon' => 'dashicons-media-code',
+		'rewrite' => array(
+			'slug' => 'javascript'
+		)
+	));
+	// Graphic custom post type
+	register_post_type('graphic', array(
+		'labels' => array(
+			'name' => 'Graphics',
+			'add_new_item' => 'Add New Graphic',
+			'edit_item' => 'Edit Graphic',
+			'all_items' => 'All Graphics',
+			'singular_name' => 'Graphic'
+		),
+		'description' => 'Graphic custom content type',
+		'public' => true,
+		'menu_icon' => 'dashicons-format-image',
+		'rewrite' => array(
+			'slug' => 'graphics'
 		)
 	));
 }
