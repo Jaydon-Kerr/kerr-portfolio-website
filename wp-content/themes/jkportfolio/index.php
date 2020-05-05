@@ -112,11 +112,67 @@
 					?>
 
 				</div>
-				<div id="javascript" class="content-project content-project--green">
-					<h2>JavaScript/jQuery API's</h2>
+				<div id="javascript" class="content-project content-project--green container">
+					<h1>JavaScript</h1>
+					<?php 
+						
+						$javascript = new WP_Query(array(
+							'posts_per_page' => -1,
+							'post_type' => 'javascript',
+							'orderby' => 'date',
+							'order' => 'DESC'
+							)
+						);
+
+						while ($javascript->have_posts())
+						{
+
+							$javascript->the_post();
+							// fetch the featured image
+							$featured_image = get_field('featured_image');
+							$featured_image_url = $featured_image['sizes']['large']; // (thumbnail, medium, large, full or custom size)
+							?> 
+							<div class="content-project__container content-project__container--green">
+								<img class="content-project__image" src="<?php echo esc_url($featured_image_url); ?>">
+								<h5><?php the_title(); ?></h5> 
+							</div>
+							<?php
+						}
+
+						wp_reset_postdata();
+						
+					?>
 				</div>
-				<div id="graphics" class="content-project content-project--yellow">
-					<h2>Graphics</h2>
+				<div id="graphics" class="content-project content-project--yellow container">
+					<h1>Graphics</h1>
+					<?php 
+						
+						$graphics = new WP_Query(array(
+							'posts_per_page' => -1,
+							'post_type' => 'graphic',
+							'orderby' => 'date',
+							'order' => 'DESC'
+							)
+						);
+
+						while ($graphics->have_posts())
+						{
+
+							$graphics->the_post();
+							// fetch the featured image
+							$featured_image = get_field('featured_image');
+							$featured_image_url = $featured_image['sizes']['large']; // (thumbnail, medium, large, full or custom size)
+							?> 
+							<div class="content-project__container content-project__container--yellow">
+								<img class="content-project__image" src="<?php echo esc_url($featured_image_url); ?>">
+								<h5><?php the_title(); ?></h5> 
+							</div>
+							<?php
+						}
+
+						wp_reset_postdata();
+						
+					?>
 				</div>
 			</div>
 		</main>

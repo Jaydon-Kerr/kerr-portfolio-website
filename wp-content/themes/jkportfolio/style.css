@@ -244,8 +244,14 @@ content-project styles start
 .content-project--green {
   background-color: #98da7e;
 }
+.content-project__container--green {
+  background-color: #1e231c;
+}
 .content-project--yellow {
   background-color: #f2d85b;
+}
+.content-project__container--yellow {
+  background-color: #3a362b;
 }
 /*
 content-project styles end
