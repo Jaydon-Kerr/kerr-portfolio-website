@@ -3,7 +3,7 @@
 
 		<!-- right float content -->
 		<main id="right-bar">
-			<div class="content-header container">
+			<div id="top" class="content-header container">
 				<h1>Hello, I'm <span class="highlight">Jaydon</span>.</h1>
 				<h1>I'm a <span class="highlight">web designer</span> and <span class="highlight">developer</span>.</h1>
 				<br>
@@ -48,10 +48,11 @@
 							$featured_image = get_field('featured_image');
 							$featured_image_url = $featured_image['sizes']['large']; // (thumbnail, medium, large, full or custom size)
 							?> 
-							<div class="content-project__container content-project__container--teal">
+							<a href="#"><div class="content-project__container content-project__container--teal">
+								<div class="content-project__overlay"></div>
 								<img class="content-project__image" src="<?php echo esc_url($featured_image_url); ?>">
-								<h5><?php the_title(); ?></h5> 
-							</div>
+								<h2 class="pad-top"><?php the_title(); ?></h2> 
+							</div></a>
 							<?php
 						}
 
@@ -132,10 +133,11 @@
 							$featured_image = get_field('featured_image');
 							$featured_image_url = $featured_image['sizes']['large']; // (thumbnail, medium, large, full or custom size)
 							?> 
-							<div class="content-project__container content-project__container--green">
+							<a href="#"><div class="content-project__container content-project__container--green">
+								<div class="content-project__overlay"></div>
 								<img class="content-project__image" src="<?php echo esc_url($featured_image_url); ?>">
-								<h5><?php the_title(); ?></h5> 
-							</div>
+								<h2 class="pad-top"><?php the_title(); ?></h2> 
+							</div></a>
 							<?php
 						}
 
@@ -163,16 +165,20 @@
 							$featured_image = get_field('featured_image');
 							$featured_image_url = $featured_image['sizes']['large']; // (thumbnail, medium, large, full or custom size)
 							?> 
-							<div class="content-project__container content-project__container--yellow">
+							<a href="#"><div class="content-project__container content-project__container--yellow">
+								<div class="content-project__overlay"></div>
 								<img class="content-project__image" src="<?php echo esc_url($featured_image_url); ?>">
-								<h5><?php the_title(); ?></h5> 
-							</div>
+								<h2 class="pad-top"><?php the_title(); ?></h2> 
+							</div></a>
 							<?php
 						}
 
 						wp_reset_postdata();
 						
 					?>
+				</div>
+				<div>
+					<p class="pad-top pad-bot centered"><a href="#top">Back to top</a></p>
 				</div>
 			</div>
 		</main>

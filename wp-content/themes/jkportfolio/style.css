@@ -112,19 +112,6 @@ Nav styles end
 =====================================================================
 */
 /*
-Main styles start
-=====================================================================
-*/
-main {
-  /*background-color: @white-grey;
-	float: left;
-	width: 70%;*/
-}
-/*
-Main styles end
-=====================================================================
-*/
-/*
 book-nav styles start
 =====================================================================
 */
@@ -189,6 +176,8 @@ bars styles start
   overflow: scroll;
   /* Hides bottom scroll bar*/
   overflow-x: hidden;
+  background-color: #2e373e;
+  color: #4ac3be;
 }
 /* experimental hide scroll bar  */
 /*#right-bar
@@ -208,8 +197,8 @@ content-header styles start
 =====================================================================
 */
 .content-header {
-  background-color: #2e373e;
-  color: #4ac3be;
+  /*background-color: @dark-blue;
+	color: @light-blue;*/
 }
 /* Elements */
 /* Modifiers */
@@ -230,6 +219,7 @@ content-project styles start
   padding: 1.5em;
   margin-top: 3em;
   /*border-radius: 8px;*/
+  position: relative;
 }
 .content-project__image {
   width: 100%;
@@ -252,6 +242,19 @@ content-project styles start
 }
 .content-project__container--yellow {
   background-color: #3a362b;
+}
+.content-project__overlay {
+  background-color: #98da7e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity .5s;
+}
+.content-project__overlay:hover {
+  opacity: 0.5;
 }
 /*
 content-project styles end
