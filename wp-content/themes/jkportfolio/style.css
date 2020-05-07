@@ -307,3 +307,41 @@ misc styles start
 misc styles end
 =====================================================================
 */
+/*
+Test styles
+*/
+/*
+This is the visible area of you carousel.
+Set a width here to define how much items are visible.
+The width can be either fixed in px or flexible in %.
+Position must be relative!
+*/
+/*.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    /*height: 800px;
+    height: 56.25%;
+}*/
+/*
+Width will have to be pre determined by adaptive sizing.
+*/
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+  width: 932.17px;
+  margin: auto;
+}
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.jcarousel li {
+  float: left;
+}
+.jcarousel img {
+  width: 932.17px;
+}

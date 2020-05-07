@@ -48,7 +48,7 @@
 							$featured_image = get_field('featured_image');
 							$featured_image_url = $featured_image['sizes']['large']; // (thumbnail, medium, large, full or custom size)
 							?> 
-							<a href="#"><div class="content-project__container content-project__container--teal">
+							<a href="<?php the_permalink(); ?>"><div class="content-project__container content-project__container--teal">
 								<div class="content-project__overlay"></div>
 								<img class="content-project__image" src="<?php echo esc_url($featured_image_url); ?>">
 								<h2 class="pad-top"><?php the_title(); ?></h2> 
@@ -185,36 +185,5 @@
 	</div>
 
 
-
-
-
-
-
-
-
-<!-- <?php
-	$websites = new WP_Query(array(
-		'posts_per_page' => -1,
-		'post_type' => 'website',
-		'orderby' => 'date',
-		'order' => 'DESC'
-		)
-	);
-
-	while ($websites->have_posts())
-	{
-	$websites->the_post();
-	?> <h5 class="project-example__heading"><?php the_title(); ?></h5> <?php
-	$images = acf_photo_gallery('images', $post->ID);
-	foreach ($images as $image) {
-		$full_image_url = $image['full_image_url'];
-		$full_image_url = acf_photo_gallery_resize_image($full_image_url, 262, 160); // resize the image
-		echo "<img src='" . $full_image_url . "'>";
-	}
-
-	}
-
-	wp_reset_postdata();
-?> -->
 
 <?php get_footer(); ?>

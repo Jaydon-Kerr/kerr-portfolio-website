@@ -12,7 +12,7 @@
 		<!-- header will float left -->
 		<header id="left-bar">
 				<nav id="main-nav">
-					<a href="#">
+					<a href="<?php echo get_home_url(); ?>">
 						<h1 class="large-heading highlight">Jaydon</h1>
 						<h1 class="large-heading highlight main-nav__main-link">Kerr</h1>
 					</a>
