@@ -267,7 +267,24 @@ content-project styles start
 {
 	width: 100%;
 }
+
+.content-project__overlay
+{
+	background-color: @green;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+
+	transition: opacity .5s;
+}
 /* Modifiers */
+.content-project--no-margin
+{
+	margin-top: 0em;
+}
 
 .content-project--teal
 {
@@ -296,18 +313,7 @@ content-project styles start
 	background-color: @yellow-dark;
 }
 
-.content-project__overlay
-{
-	background-color: @green;
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
 
-	transition: opacity .5s;
-}
 .content-project__overlay:hover
 {
 	opacity: .5
@@ -370,6 +376,19 @@ misc styles start
 {
 	padding-bottom: 2em;
 }
+.bck-arw
+{
+	position: relative;
+	top: 5px;
+	left: 5px;
+	
+}
+.three-col
+{
+	width: 33.3333%;
+	float: left;
+	height: 100%;
+}
 /*
 misc styles end
 =====================================================================
@@ -399,7 +418,7 @@ Width will have to be pre determined by adaptive sizing.
 .jcarousel {
     position: relative;
     overflow: hidden;
-    width: 932.17px;
+    width: 100%;
     margin: auto;
 }
 
@@ -416,5 +435,5 @@ Width will have to be pre determined by adaptive sizing.
 }
 
 .jcarousel img {
-    width: 932.17px;
+    width: 761.1px;
 }
