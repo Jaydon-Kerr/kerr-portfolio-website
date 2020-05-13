@@ -8,7 +8,7 @@
 				<h1>I'm a <span class="highlight">web designer</span> and <span class="highlight">developer</span>.</h1>
 				<br>
 				<video width="1280" height="720" controls>
-					<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+					<source src="" type="video/mp4">
 					Your browser does not support video tags - sad day :(
 				</video>
 				<!-- downward arrow icon goes here -->

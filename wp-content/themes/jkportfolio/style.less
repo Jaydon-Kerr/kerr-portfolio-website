@@ -25,7 +25,7 @@ Tags: Portfolio
 @green: #98da7e;
 @green-dark: #1E231C;
 /* yellow graphics section colors */
-@yellow: #f2d85b;
+@yellow: #E1C864;
 @yellow-dark: #3A362B;
 /*
 Font styles start
@@ -376,6 +376,10 @@ misc styles start
 {
 	padding-bottom: 2em;
 }
+.pad-bot-2x
+{
+	padding-bottom: 5em;
+}
 .bck-arw
 {
 	position: relative;
@@ -383,11 +387,21 @@ misc styles start
 	left: 5px;
 	
 }
-.three-col
+.col-33
 {
 	width: 33.3333%;
 	float: left;
 	height: 100%;
+}
+.col-10
+{
+	width: 10%;
+	float: left;
+}
+.col-80
+{
+	width: 80%;
+	float: left;
 }
 /*
 misc styles end
@@ -436,4 +450,58 @@ Width will have to be pre determined by adaptive sizing.
 
 .jcarousel img {
     width: 761.1px;
+}
+
+/*.jcarousel-control-prev
+{
+	position: relative;
+	left: -16.7em;
+	top: -11em;
+}
+.jcarousel-control-next
+{
+	position: relative;
+	left: 16.7em;
+	bottom: 11em;
+}*/
+
+/*.jcarousel-pagination a
+{
+	font-size: 16px;
+	background-color: black;
+	width: 20px;
+	height: 20px;
+	padding: .5em;
+	margin: .5em;
+	display: inline-block;
+	border-radius: 100%;
+}*/
+.jcarousel-pagination a {
+    display: inline-block;
+    font-size: 16px;
+/*    line-height: 14px;*/
+	width: 20px;
+	height: 20px;
+	padding-top: 1em;
+	padding-bottom: .8em;
+	padding-right: .3em;
+	padding-left: .3em;
+	margin-left: 5px;
+	margin-right: 5px;
+    background-color: white;
+    color: @teal-dark-blue;
+    /*border-radius: 14px;*/
+    opacity: .75;
+    transition: background-color .25s;
+}
+.jcarousel-pagination a:hover 
+{
+	background-color: @green;
+}
+.jcarousel-pagination a.active {
+    background-color: @teal-dark-blue;
+    color: white;
+    opacity: 1;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+
 }

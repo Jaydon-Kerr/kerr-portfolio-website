@@ -11,10 +11,10 @@
 
 					?>
 					<div style="height: 8em;">
-						<div class="three-col centered" style="padding-top: 2em;">
+						<div class="col-33 centered" style="padding-top: 2em;">
 							<a href="<?php echo get_home_url(); ?>" class="bck-arw"><i class="fas fa-arrow-left fa-2x"></i></a>
 						</div>
-						<div class="three-col centered" style="padding-top: 2.8em;">
+						<div class="col-33 centered" style="padding-top: 2.8em;">
 							<h1><?php the_title(); ?></h1> 
 						</div>
 					</div>
@@ -47,17 +47,31 @@
 								</div>
 							</div>
 						</a>
+						<div class="pad-top pad-bot-2x">
+							<div class="col-10">
+								<a href="#" class="jcarousel-control-prev"><i class="fas fa-arrow-left fa-2x"></i></a>
+							</div>
+							<div class="col-80">
+								<div class="jcarousel-pagination">
+				                    <!-- Pagination items will be generated in here -->
+				                </div>
+
+							</div>
+							<div class="col-10">
+								<a href="#" class="jcarousel-control-next"><i class="fas fa-arrow-right fa-2x"></i></a>
+							</div>
+						</div>
+						<!-- Pagination -->
+		                
+
+						<!-- Prev/next controls -->
+						
+                		
+                		<!-- TODO: change inline style to external less file -->
+		                <p style="text-align: left; clear: both;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
 					</div>
-
-					
-					<!-- Prev/next controls -->
-                <a href="#" class="jcarousel-control-prev">&lsaquo; Prev</a>
-                <a href="#" class="jcarousel-control-next">Next &rsaquo;</a>
-
-                <!-- Pagination -->
-                <p class="jcarousel-pagination">
-                    <!-- Pagination items will be generated in here -->
-                </p>
+               
 					<?php
 				?>
 
