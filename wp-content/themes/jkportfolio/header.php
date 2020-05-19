@@ -12,13 +12,13 @@
 		<!-- header will float left -->
 		<header id="left-bar">
 				<nav id="main-nav">
-					<a href="<?php echo get_home_url(); ?>">
+					<a href="<?php echo esc_url(get_home_url()); ?>">
 						<h1 class="large-heading highlight">Jaydon</h1>
 						<h1 class="large-heading highlight main-nav__main-link">Kerr</h1>
 					</a>
 					<ul>
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">About</a></li>
+						<li><a href="<?php echo esc_url(get_home_url()); ?>">Portfolio</a></li>
+						<li><a href="<?php echo esc_url(get_home_url()) . '/about'; ?>">About</a></li>
 					</ul>
 				</nav>
 				<div class="main-nav__footer">
