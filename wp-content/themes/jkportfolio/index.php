@@ -13,7 +13,7 @@
 				</video>
 				<!-- downward arrow icon goes here -->
 				<div class="centered pad-bot">
-					<h3 class="pad-top pad-bot">See what I can do.</h3>
+					<h3 class="pad-top pad-bot">See what I've made.</h3>
 					<i class="fas fa-long-arrow-alt-down fa-4x"></i>
 				</div>
 				

@@ -10,11 +10,11 @@
 					$featured_image_url = $featured_image['sizes']['large']; // (thumbnail, medium, large, full or custom size)
 
 					?>
-					<div style="height: 8em;">
-						<div class="col-33 centered" style="padding-top: 2em;">
+					<div class="interior-header">
+						<div class="col-33 centered interior-header__left">
 							<a href="<?php echo get_home_url(); ?>" class="bck-arw"><i class="fas fa-arrow-left fa-2x"></i></a>
 						</div>
-						<div class="col-33 centered" style="padding-top: 2.8em;">
+						<div class="col-33 centered interior-header__mid">
 							<h1><?php the_title(); ?></h1> 
 						</div>
 					</div>

@@ -32,6 +32,9 @@ p,
 a {
   font-size: 19px;
 }
+p {
+  line-height: 1.4em;
+}
 h1,
 h2,
 h3,
@@ -291,11 +294,43 @@ about styles start
 }
 .about h2,
 .about p {
+  padding-bottom: 1em;
+}
+.about ul {
+  list-style: square;
+  list-style-position: inside;
+  font-size: 19px;
   padding-bottom: .5em;
+}
+.about ul li ul {
+  list-style: square;
+  list-style-position: inside;
+  margin-left: 1.5em;
+  padding-top: .5em;
+  font-size: 16px;
 }
 /* Modifiers */
 /*
 about styles end
+=====================================================================
+*/
+/*
+interior styles start
+=====================================================================
+*/
+/* Blocks */
+.interior-header {
+  height: 8em;
+}
+.interior-header__left {
+  padding-top: 2em;
+}
+.interior-header__mid {
+  padding-top: 2.8em;
+}
+/* Modifiers */
+/*
+interior styles end
 =====================================================================
 */
 /*
