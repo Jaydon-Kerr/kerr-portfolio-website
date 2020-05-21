@@ -135,7 +135,7 @@
 							$featured_image = get_field('featured_image');
 							$featured_image_url = $featured_image['sizes']['large']; // (thumbnail, medium, large, full or custom size)
 							?> 
-							<a href="#">
+							<a href="<?php the_permalink(); ?>">
 								<div class="content-project__container content-project__container--green">
 									<div class="content-project__overlay"></div>
 									<img class="content-project__image" src="<?php echo esc_url($featured_image_url); ?>">

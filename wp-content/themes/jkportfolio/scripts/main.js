@@ -174,4 +174,12 @@ jQuery(document).ready(function()
 	    });
 	})(jQuery);
 
+	var typingTimer;
+	var doneTypingInterval = 5000;
+
+	jQuery("#userinput").on("change", function ()
+		{
+			clearTimeout(typingTimer);
+			typingTimer = setTimeout(function() {console.log("timer out!")}, doneTypingInterval);
+		});
 });
