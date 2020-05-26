@@ -174,12 +174,21 @@ jQuery(document).ready(function()
 	    });
 	})(jQuery);
 
-	var typingTimer;
-	var doneTypingInterval = 5000;
+	// var typingTimer;
+	// var doneTypingInterval = 1500;
 
-	jQuery("#userinput").on("change", function ()
-		{
-			clearTimeout(typingTimer);
-			typingTimer = setTimeout(function() {console.log("timer out!")}, doneTypingInterval);
-		});
+	// jQuery("#userInput").on("change", function ()
+	// 	{
+	// 		if (jQuery("#userInput").val() == "")
+	// 		{
+	// 			console.log("String empty");
+	// 		}
+	// 		else
+	// 		{
+	// 			clearTimeout(typingTimer);
+	// 			typingTimer = setTimeout(function() {console.log("timer out by vlaue change!")}, doneTypingInterval);
+	// 		}
+			
+	// 	});
+
 });

@@ -24,10 +24,13 @@
 					
 					
 					
-					<div class="content-project content-project--green container">
-						<input type="text" name="userinput" id="userinput" placeholder="Type Something:" class="textbox">
+					<div class="content-project content-project--green container txt-lft">
+						<input type="text" name="userInput" id="userInput" placeholder="Type Something:" class="textbox">
 
-		                <p class="txt-lft">This is the description. This API does stuff.</p>
+						<div id="output">
+						</div>
+
+		                <p>This is the description. This API does stuff.</p>
 
 					</div>
 		</main>
