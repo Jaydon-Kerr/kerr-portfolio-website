@@ -45,18 +45,18 @@ jQuery(document).ready(function()
 	})(jQuery);
 
 	
-	// if page is on javascript post type
-	var url = window.location.pathname;
-	if (url.indexOf("javascript") >= 0) 
-	{
-		// add event listener to #code-output
-		jQuery("#code-btn").on("click", function()
-			{
-				jQuery("#code-output").fadeToggle();
-			});
-	}
-	else
-	{
-		// do nothing
-	}
+	// // if page is on javascript post type
+	// var url = window.location.pathname;
+	// if (url.indexOf("javascript") >= 0) 
+	// {
+	// 	// add event listener to #code-output
+	// 	jQuery("#code-btn").on("click", function()
+	// 		{
+	// 			jQuery("#code-output").fadeToggle();
+	// 		});
+	// }
+	// else
+	// {
+	// 	// do nothing
+	// }
 });
