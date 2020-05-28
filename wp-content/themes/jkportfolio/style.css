@@ -352,6 +352,65 @@ textbox styles end
 =====================================================================
 */
 /*
+button styles start
+=====================================================================
+*/
+/* Blocks */
+.button {
+  width: 10em;
+  height: 2.5em;
+  font-size: 22px;
+  text-align: center;
+  margin: 1em;
+  background-color: #2e373e;
+  color: #4ac3be;
+  border: none;
+  transition-property: background-color, color;
+  transition-duration: .25s;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+}
+.button:hover {
+  background-color: #151e24;
+  color: #98da7e;
+  cursor: pointer;
+}
+/*Elements*/
+.button__wrapper {
+  display: flex;
+  justify-content: center;
+}
+/* Modifiers */
+.button--dark {
+  background-color: #151e24;
+}
+.button--big {
+  width: 100%;
+  height: 3em;
+  margin-bottom: 0;
+  font-size: 25px;
+}
+/*
+button styles end
+=====================================================================
+*/
+/*
+output styles start
+=====================================================================
+*/
+/* Blocks */
+.output {
+  background-color: #2e373e;
+  color: #4ac3be;
+  padding: 2em;
+  display: none;
+}
+/* Modifiers */
+/*
+output styles end
+=====================================================================
+*/
+/*
 misc styles start
 =====================================================================
 */

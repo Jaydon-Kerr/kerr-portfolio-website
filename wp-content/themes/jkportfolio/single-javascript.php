@@ -3,9 +3,6 @@
 
 		<!-- right float content -->
 		<main id="right-bar">
-			<script type="text/javascript">
-				<?php echo get_field("code"); ?>
-			</script>
 				<?php
 					the_post();
 					// need to populate array with images
@@ -27,11 +24,16 @@
 					<div class="content-project content-project--green container txt-lft">
 						<input type="text" name="userInput" id="userInput" placeholder="Type Something:" class="textbox">
 
-						<div id="output">
+						<div class="output" id="output">
 						</div>
 
-		                <p>This is the description. This API does stuff.</p>
-
+		                <p>This program utilizes the google CSE API to search amazon for kerywords inputted by the user. Go ahead and try it out by typing something in the text box and pressing enter.</p>
+		                <div class="button__wrapper">
+		                	<button class="button" id="code-btn">See the code</button>
+		                </div>
+		                <div class="output" id="code-output">
+		                	Placeholder
+		                </div>
 					</div>
 		</main>
 	</div>

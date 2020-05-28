@@ -1,7 +1,8 @@
 /*
 Program:		searchEngine.js
 Author:			Jaydon Kerr
-Date:			June 7, 2019
+Date-Created:	June 7, 2019
+Date-Updated: 	May 27, 2020
 Description:	uses the google CSE to create a custom search engine for amazon.
 */
 // cant use jQuery $ as it causes issues with WordPress. Must use jQuery function instead
@@ -41,48 +42,6 @@ jQuery(document).ready(function()
 
 			
 		});
-
-
-
-
-
-	// listen for clicks on CSESearch
-	// $("#CSESearch").on("click", function()
-	// 	{
-	// 		if (!searchEngineActive)
-	// 		{
-	// 			searchEngineActive = true;
-
-	// 			console.log("clicking works!");
-	// 			//get the search term
-	// 			var searchTerm = $("#searchEngineInput").val();
-
-	// 			//search for it
-	// 			CSESearch(searchTerm);
-	// 		}
-	// 		else
-	// 		{
-	// 			console.log("Engine search has not finished yet.");
-	// 		}
-			
-	// 	});
-
-	// //setup before functions
-	// var typingTimer;                //timer identifier
-	// var doneTypingInterval = 5000;  //time in ms (5 seconds)
-
-	// //on keyup, start the countdown
-	// $('#myInput').keyup(function(){
-	//     clearTimeout(typingTimer);
-	//     if ($('#myInput').val()) {
-	//         typingTimer = setTimeout(doneTyping, doneTypingInterval);
-	//     }
-	// });
-
-	// //user is "finished typing," do something
-	// function doneTyping () {
-	//     //do something
-	// }
 });
 /*--------------------------------------------------------------------
 Name:	onTimeout
@@ -97,6 +56,9 @@ function onTimeout(usrInpt)
 	{
 		// set searchEngineActive to active to avoid overlapping requests
 		searchEngineActive = true;
+		// fade out and empty the container
+		jQuery("#output").fadeOut();
+		jQuery("#output").empty();
 
 		// search the CSE for the searchQuery
 		CSESearch(usrInpt);
@@ -149,15 +111,19 @@ function CSEDisplay(response)
 	// ouput each item recieved
 	jQuery.each(response.items, function(i, object)
 		{
-			// title as link
 			var title = "<a href='" + object.link + "'>" + object.title + "</a>";
-			// container
-			jQuery("#output").append("<div>" + title + "</div>");
-			// link and title
-			// $("#engine-result-" + i).append("<a href='" + object.link + "'><h3>" + object.title + "</h3></a>");
-			// // image preview
-			// $("#engine-result-" + i).append("<img src='" + object.pagemap.cse_thumbnail[0].src + "'>");
-			// // description
-			// $("#engine-result-" + i).append("<p>" + object.htmlSnippet + "</p><br>");
+			var image = "<img src='" + object.pagemap.cse_thumbnail[0].src + "'>";
+			var description = "<p>" + object.htmlSnippet + "</p>";
+			// open container
+			jQuery("#output").append("<div>");
+			// contianer content
+			jQuery("#output").append(image);
+			jQuery("#output").append(title);
+			jQuery("#output").append(description);
+			// close container
+			jQuery("#output").append("</div>");
+
+			// display the container
+			jQuery("#output").fadeIn();
 		});
 }
