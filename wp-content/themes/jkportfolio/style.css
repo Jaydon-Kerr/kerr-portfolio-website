@@ -14,6 +14,7 @@ Tags: Portfolio
 /* teal website section colors */
 /* green javascript section colors */
 /* yellow graphics section colors */
+/* screen size variables */
 /*
 Font styles start
 =====================================================================
@@ -90,7 +91,7 @@ heading styles end
 =====================================================================
 */
 /*
-Nav styles start
+main-nav styles start
 =====================================================================
 */
 #main-nav {
@@ -110,8 +111,45 @@ Nav styles start
   position: absolute;
   bottom: 1em;
 }
+/* resizing adaptability */
+@media only screen and (max-width: 900px) {
+  #main-nav {
+    display: none;
+  }
+  .main-nav__hidden {
+    display: none;
+  }
+  .main-nav__footer {
+    bottom: auto;
+    position: static;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: none;
+  }
+}
 /*
-Nav styles end
+main-nav styles end
+=====================================================================
+*/
+/*
+mobile-nav styles start
+=====================================================================
+*/
+#mobile-nav {
+  padding-top: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 3em;
+  display: none;
+}
+/* resizing adaptability */
+@media only screen and (max-width: 900px) {
+  #mobile-nav {
+    display: block;
+  }
+}
+/*
+mobile-nav styles end
 =====================================================================
 */
 /*
@@ -137,7 +175,13 @@ container styles start
 .container {
   padding: 3em;
 }
-/* Modifiers */
+/* resizing adaptability */
+@media only screen and (max-width: 900px) {
+  .container {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
 /*
 container styles end
 =====================================================================
@@ -153,6 +197,23 @@ wrapper styles start
   height: 100%;
   min-height: 100%;
 }
+/* resizing adaptability */
+@media only screen and (max-width: 1300px) {
+  .wrapper {
+    width: 55em;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .wrapper {
+    width: 32em;
+  }
+}
+/*@media only screen and (max-width: @tny-screen) {
+	.wrapper
+	{
+		width: 20em;
+	}
+}*/
 /*
 wrapper styles end
 =====================================================================
@@ -182,15 +243,22 @@ bars styles start
   background-color: #2e373e;
   color: #4ac3be;
 }
-/* experimental hide scroll bar  */
-/*#right-bar
-{
-	-ms-overflow-style: none;
+/* resizing adaptability */
+@media only screen and (max-width: 900px) {
+  #left-bar {
+    margin-right: 0;
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    float: none;
+  }
+  #right-bar {
+    float: none;
+    width: 100%;
+    overflow: visible;
+    margin-left: 0;
+  }
 }
-#right-bar::-webkit-scrollbar
-{
-	display: none;
-}*/
 /*
 bars styles end
 =====================================================================
@@ -415,6 +483,30 @@ output styles end
 =====================================================================
 */
 /*
+cse styles start
+=====================================================================
+*/
+/* Blocks */
+.cse {
+  padding-bottom: 3em;
+}
+/* Elements */
+.cse__title {
+  /*padding-top: 1em;*/
+}
+.cse__img {
+  width: 15em;
+  display: block;
+  padding-bottom: 1em;
+}
+.cse__desc {
+  padding-top: 1em;
+}
+/*
+cse styles end
+=====================================================================
+*/
+/*
 misc styles start
 =====================================================================
 */
@@ -442,6 +534,12 @@ misc styles start
   top: 5px;
   left: 5px;
 }
+.clickable {
+  cursor: pointer;
+}
+.clr {
+  clear: both;
+}
 .col-33 {
   width: 33.3333%;
   float: left;
@@ -453,6 +551,10 @@ misc styles start
 }
 .col-80 {
   width: 80%;
+  float: left;
+}
+.col-20 {
+  width: 20%;
   float: left;
 }
 /*

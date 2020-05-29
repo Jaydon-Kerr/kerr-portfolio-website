@@ -11,8 +11,18 @@
 	<div class="wrapper">
 		<!-- header will float left -->
 		<header id="left-bar">
+				<div id="mobile-nav">
+					<div class="col-80">
+						<a href="<?php echo esc_url(get_home_url()); ?>">
+							<h1 class="large-heading highlight">Jaydon Kerr</h1>
+						</a>
+					</div>
+					<div class="col-20">
+						<i id="ham-nav" class="clickable fas fa-bars fa-3x"></i>
+					</div>
+				</div>
 				<nav id="main-nav">
-					<a href="<?php echo esc_url(get_home_url()); ?>">
+					<a class="main-nav__hidden" href="<?php echo esc_url(get_home_url()); ?>">
 						<h1 class="large-heading highlight">Jaydon</h1>
 						<h1 class="large-heading highlight main-nav__main-link">Kerr</h1>
 					</a>

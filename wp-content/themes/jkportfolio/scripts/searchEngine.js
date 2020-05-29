@@ -36,11 +36,7 @@ jQuery(document).ready(function()
 				clearTimeout(typingTimer);
 				// set a new timer
 				typingTimer = setTimeout(onTimeout(usrInpt), doneTypingInterval);
-			}
-
-
-
-			
+			}	
 		});
 });
 /*--------------------------------------------------------------------
@@ -83,7 +79,7 @@ function CSESearch(searchTerm)
 	{
 		cx: "003901611926032306192:efwes0ycd_4",
 		q: searchTerm,
-		key: "AIzaSyDbIR5r6ZJvHpHDBS5IF6IOmXHL0jVBqqo",
+		key: "AIzaSyA6ki6U048R79Vkh7-43d4rXiLwztNs8pQ",
 		safe: "active",
 		num: 3, 
 	}
@@ -111,17 +107,12 @@ function CSEDisplay(response)
 	// ouput each item recieved
 	jQuery.each(response.items, function(i, object)
 		{
-			var title = "<a href='" + object.link + "'>" + object.title + "</a>";
-			var image = "<img src='" + object.pagemap.cse_thumbnail[0].src + "'>";
-			var description = "<p>" + object.htmlSnippet + "</p>";
-			// open container
-			jQuery("#output").append("<div>");
-			// contianer content
-			jQuery("#output").append(image);
-			jQuery("#output").append(title);
-			jQuery("#output").append(description);
-			// close container
-			jQuery("#output").append("</div>");
+			var title = "<a class='cse__title' href='" + object.link + "'>" + object.title + "</a>";
+			var image = "<img class='cse__img' src='" + object.pagemap.cse_thumbnail[0].src + "'>";
+			var description = "<p class='cse__desc'>" + object.htmlSnippet + "</p>";
+
+			// open container and add content
+			jQuery("#output").append("<div class='cse'>" + image + title + description + "</div>");
 
 			// display the container
 			jQuery("#output").fadeIn();

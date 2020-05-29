@@ -59,4 +59,10 @@ jQuery(document).ready(function()
 	// {
 	// 	// do nothing
 	// }
+
+	// listen for clicks on #ham-nav
+	jQuery("#ham-nav").on("click", function() 
+		{
+			jQuery("#main-nav, .main-nav__footer").fadeToggle();
+		});
 });
