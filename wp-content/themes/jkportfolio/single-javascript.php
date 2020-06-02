@@ -4,6 +4,7 @@
 		<!-- right float content -->
 		<main id="right-bar">
 			<!-- <script type="text/javascript" src="<?php echo get_field("code_link"); ?>"></script> -->
+			<script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
 
 				<?php
 					the_post();

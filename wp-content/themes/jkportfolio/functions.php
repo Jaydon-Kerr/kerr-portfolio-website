@@ -11,7 +11,7 @@ function get_scripts()
 	// wp_enqueue_script('searchEngine.js', (get_stylesheet_directory_uri() . "/scripts/searchEngine.js"), array('jquery') );
 	// jService
 	// wp_enqueue_script('searchEngine.js', (get_stylesheet_directory_uri() . "/scripts/jservice.js"), array('jquery') );
-	// YouTube
-	// wp_enqueue_script('searchEngine.js', (get_stylesheet_directory_uri() . "/scripts/searchYoutube.js"), array('jquery') );
+	// searchYoutube.js
+	wp_enqueue_script('searchEngine.js', (get_stylesheet_directory_uri() . "/scripts/searchYoutube.js"), array('jquery') );
 }
 add_action('wp_enqueue_scripts', 'get_scripts');

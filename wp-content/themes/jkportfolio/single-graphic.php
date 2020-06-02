@@ -21,9 +21,9 @@
 					
 					
 					
-					<div class="content-project content-project--teal container">
+					<div class="content-project content-project--yellow container">
 						<a href="#" onClick="return false;" style="cursor: default;">
-							<div class="content-project__container content-project__container--teal content-project--no-margin">
+							<div class="content-project__container content-project__container--yellow content-project--no-margin">
 								<div class="jcarousel">
 									<ul>
 										<!-- output feature image here -->

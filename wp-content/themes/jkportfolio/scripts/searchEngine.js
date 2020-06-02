@@ -79,7 +79,7 @@ function CSESearch(searchTerm)
 	{
 		cx: "003901611926032306192:efwes0ycd_4",
 		q: searchTerm,
-		key: "AIzaSyA6ki6U048R79Vkh7-43d4rXiLwztNs8pQ",
+		key: "AIzaSyDbIR5r6ZJvHpHDBS5IF6IOmXHL0jVBqqo",
 		safe: "active",
 		num: 3, 
 	}

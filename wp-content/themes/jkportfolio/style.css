@@ -62,6 +62,15 @@ h5 {
 h6 {
   font-size: 16px;
 }
+/* resizing adaptability */
+@media only screen and (max-width: 550px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+}
 /*
 link styles start
 =====================================================================
@@ -85,6 +94,12 @@ heading styles start
 */
 .large-heading {
   font-size: 45px;
+}
+/* resizing adaptability */
+@media only screen and (max-width: 550px) {
+  .large-heading {
+    font-size: 40px;
+  }
 }
 /*
 heading styles end
@@ -164,6 +179,20 @@ book-nav styles start
   padding-left: 2em;
   padding-right: 2em;
 }
+/* resizing adaptability */
+@media only screen and (max-width: 900px) {
+  .book-nav__list li {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .book-nav__list li {
+    padding: 0;
+    padding-bottom: .5em;
+    display: block;
+  }
+}
 /*
 book-nav styles end
 =====================================================================
@@ -180,6 +209,12 @@ container styles start
   .container {
     padding-left: 1em;
     padding-right: 1em;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .container {
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
 }
 /*
@@ -208,12 +243,11 @@ wrapper styles start
     width: 32em;
   }
 }
-/*@media only screen and (max-width: @tny-screen) {
-	.wrapper
-	{
-		width: 20em;
-	}
-}*/
+@media only screen and (max-width: 550px) {
+  .wrapper {
+    width: 320px;
+  }
+}
 /*
 wrapper styles end
 =====================================================================
@@ -330,6 +364,15 @@ content-project styles start
 .content-project__overlay:hover {
   opacity: 0.5;
 }
+/* resizing adaptability */
+@media only screen and (max-width: 550px) {
+  .content-project__container {
+    margin-top: 1em;
+  }
+  .content-project__container {
+    padding: .8em;
+  }
+}
 /*
 content-project styles end
 =====================================================================
@@ -390,6 +433,7 @@ interior styles start
 .interior-header {
   height: 8em;
 }
+/* Elements */
 .interior-header__left {
   padding-top: 2em;
 }
@@ -397,6 +441,22 @@ interior styles start
   padding-top: 2.8em;
 }
 /* Modifiers */
+@media only screen and (max-width: 900px) {
+  .interior-header {
+    height: 12em;
+  }
+  .interior-header__left {
+    /* styles must be important to override col styles*/
+    float: none !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+  .interior-header__mid {
+    float: none !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+}
 /*
 interior styles end
 =====================================================================
@@ -502,6 +562,23 @@ cse styles start
 .cse__desc {
   padding-top: 1em;
 }
+.cse__video {
+  width: 720px;
+  height: 405px;
+}
+/* resizing adaptability */
+@media only screen and (max-width: 1300px) {
+  .cse__video {
+    width: 400px;
+    height: 225px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .cse__video {
+    width: 220px;
+    height: 124px;
+  }
+}
 /*
 cse styles end
 =====================================================================
@@ -597,31 +674,8 @@ Width will have to be pre determined by adaptive sizing.
   float: left;
 }
 .jcarousel img {
-  width: 761.1px;
+  width: 776px;
 }
-/*.jcarousel-control-prev
-{
-	position: relative;
-	left: -16.7em;
-	top: -11em;
-}
-.jcarousel-control-next
-{
-	position: relative;
-	left: 16.7em;
-	bottom: 11em;
-}*/
-/*.jcarousel-pagination a
-{
-	font-size: 16px;
-	background-color: black;
-	width: 20px;
-	height: 20px;
-	padding: .5em;
-	margin: .5em;
-	display: inline-block;
-	border-radius: 100%;
-}*/
 .jcarousel-pagination a {
   display: inline-block;
   font-size: 16px;
@@ -648,4 +702,26 @@ Width will have to be pre determined by adaptive sizing.
   color: white;
   opacity: 1;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+}
+/* resizing adaptability */
+@media only screen and (max-width: 1300px) {
+  .jcarousel img {
+    width: 480px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .arrow-right {
+    float: right;
+  }
+  .jcarousel img {
+    width: 405px;
+  }
+  .jcarousel-pagination {
+    display: none;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .jcarousel img {
+    width: 248px;
+  }
 }
