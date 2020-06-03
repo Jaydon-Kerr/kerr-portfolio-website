@@ -125,7 +125,7 @@
 							<a href="<?php the_permalink(); ?>">
 								<div class="content-project__container content-project__container--yellow">
 									<div class="content-project__overlay"></div>
-									<img class="content-project__image" src="<?php echo esc_url($featured_image_url); ?>">
+									<img class="content-project__image content-project__image--graphics" src="<?php echo esc_url($featured_image_url); ?>">
 									<h2 class="pad-top"><?php the_title(); ?></h2> 
 								</div>
 							</a>

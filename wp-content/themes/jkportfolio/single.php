@@ -19,8 +19,6 @@
 						</div>
 					</div>
 					
-					
-					
 					<div class="content-project content-project--teal container">
 						<a href="#" onClick="return false;" style="cursor: default;">
 							<div class="content-project__container content-project__container--teal content-project--no-margin">

@@ -413,6 +413,9 @@ content-project styles start
     padding: .8em;
   }
 }
+.content-project__image--graphics {
+  width: 60%;
+}
 /*
 content-project styles end
 =====================================================================
@@ -714,7 +717,7 @@ Width will have to be pre determined by adaptive sizing.
   float: left;
 }
 .jcarousel img {
-  width: 776px;
+  width: 761.1px;
 }
 .jcarousel-pagination a {
   display: inline-block;
