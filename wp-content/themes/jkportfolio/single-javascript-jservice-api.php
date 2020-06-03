@@ -4,7 +4,7 @@
 		<!-- right float content -->
 		<main id="right-bar">
 			<script type="text/javascript" src="<?php echo get_field("code_link"); ?>"></script>
-
+			
 				<?php
 					the_post();
 					?>
@@ -18,11 +18,18 @@
 					</div>
 					
 					<div class="content-project content-project--green container txt-lft">
-						<input type="text" name="userInput" id="userInput" placeholder="Type Something:" class="textbox">
+						<div class="button__wrapper pad-bot">
+							<button class="button button--big" id="usr-btn">Get Question</button>
+						</div>
 
 						<p class="pad-bot"><?php echo get_field("description"); ?></p>
 
-						<div class="output" id="output">
+						<div class="centered">
+							<h3 id="question"></h3>
+							<div class="button__wrapper">
+								<button class="button button--small" id="answer-btn">Show Answer</button>
+							</div>
+							<p id="answer"></p>
 						</div>
 		                
 		                <div class="button__wrapper">

@@ -12,6 +12,6 @@ function get_scripts()
 	// jService
 	// wp_enqueue_script('searchEngine.js', (get_stylesheet_directory_uri() . "/scripts/jservice.js"), array('jquery') );
 	// searchYoutube.js
-	wp_enqueue_script('searchEngine.js', (get_stylesheet_directory_uri() . "/scripts/searchYoutube.js"), array('jquery') );
+	// wp_enqueue_script('searchEngine.js', (get_stylesheet_directory_uri() . "/scripts/searchYoutube.js"), array('jquery') );
 }
 add_action('wp_enqueue_scripts', 'get_scripts');

@@ -3,8 +3,9 @@
 
 		<!-- right float content -->
 		<main id="right-bar">
-			<!-- <script type="text/javascript" src="<?php echo get_field("code_link"); ?>"></script> -->
-			
+			<script type="text/javascript" src="<?php echo get_field("code_link"); ?>"></script>
+			<script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+
 				<?php
 					the_post();
 					?>
@@ -18,18 +19,11 @@
 					</div>
 					
 					<div class="content-project content-project--green container txt-lft">
-						<div class="button__wrapper pad-bot">
-							<button class="button button--big" id="usr-btn">Get Question</button>
-						</div>
+						<input type="text" name="userInput" id="userInput" placeholder="Type Something:" class="textbox">
 
 						<p class="pad-bot"><?php echo get_field("description"); ?></p>
 
-						<div class="centered">
-							<h3 id="question"></h3>
-							<div class="button__wrapper">
-								<button class="button button--small" id="answer-btn">Show Answer</button>
-							</div>
-							<p id="answer"></p>
+						<div class="output" id="output">
 						</div>
 		                
 		                <div class="button__wrapper">

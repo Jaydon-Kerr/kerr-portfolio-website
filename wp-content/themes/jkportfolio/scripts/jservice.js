@@ -76,11 +76,4 @@ function jServiceDisplay(data)
 	jQuery("#answer").empty();
 	// append the new answer
 	jQuery("#answer").append(data[0].answer);
-
-	//1. display the question
-	// $("#jServiceQuestion").text(data[0].question);
-	// //2. show the output div
-	// $("#jServiceOutput").slideDown();
-	// //3. place the answer
-	// $("#jServiceAnswer").text(data[0].answer);
 }

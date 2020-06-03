@@ -72,6 +72,46 @@ h6 {
   }
 }
 /*
+scrollbar styles start
+=====================================================================
+*/
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2e373e;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4ac3be;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #98da7e;
+}
+/*::-webkit-scrollbar
+{
+	width: 100px;
+}
+::-webkit-scrollbar-track
+{
+	background: black;
+}
+::-webkit-scrollbar-thumb
+{
+	background: grey;
+}
+::-webkit-scrollbar-thumb:hover
+{
+	background: white;
+}*/
+/*
+scrollbar styles end
+=====================================================================
+*/
+/*
 link styles start
 =====================================================================
 */
