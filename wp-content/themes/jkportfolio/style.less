@@ -432,7 +432,7 @@ content-project styles start
 */
 .content-project
 {
-	color: white;
+	/*color: white;*/
 	text-align: center;
 }
 /* Elements */
@@ -460,6 +460,10 @@ content-project styles start
 
 	transition: opacity .5s;
 }
+.content-project__title
+{
+	color: @light-blue;
+}
 /* Modifiers */
 .content-project--no-margin
 {
@@ -469,6 +473,7 @@ content-project styles start
 .content-project--teal
 {
 	background-color: @teal;
+	color: @teal-dark-blue
 }
 .content-project__container--teal
 {
@@ -478,6 +483,7 @@ content-project styles start
 .content-project--green
 {
 	background-color: @green;
+	color: @green-dark
 }
 .content-project__container--green
 {
@@ -487,6 +493,7 @@ content-project styles start
 .content-project--yellow
 {
 	background-color: @yellow;
+	color: @yellow-dark
 }
 .content-project__container--yellow
 {
@@ -541,12 +548,13 @@ about styles start
 /* Blocks */
 .about 
 {
-
+	background-color: @dark-blue;
 }
 /* Elements */
 .about img
 {
 	width: 20em;
+	height: 20em;
 	float: left;
 	padding-right: 1em;
 }
@@ -569,7 +577,16 @@ about styles start
 	padding-top: .5em;
 	font-size: 16px;
 }
-/* Modifiers */
+/* resizing adaptability */
+@media only screen and (max-width: @sml-screen) {
+	.about img
+	{
+		width: 100%;
+		height: 100%;
+		padding-bottom: 1em;
+		float: none;
+	}
+}
 /*
 about styles end
 =====================================================================
@@ -824,6 +841,14 @@ misc styles start
 {
 	width: 20%;
 	float: left;
+}
+.color
+{
+
+}
+.color-dark-blue
+{
+	background-color: @dark-blue;
 }
 /*
 misc styles end

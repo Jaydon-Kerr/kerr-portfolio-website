@@ -57,7 +57,7 @@
 							<div class="content-project__container content-project__container--teal">
 								<div class="content-project__overlay"></div>
 								<img class="content-project__image" src="<?php echo esc_url($featured_image_url); ?>">
-								<h2 class="pad-top"><?php the_title(); ?></h2> 
+								<h2 class="pad-top content-project__title"><?php the_title(); ?></h2> 
 							</div>
 							</a>
 							<?php
@@ -92,7 +92,7 @@
 								<div class="content-project__container content-project__container--green">
 									<div class="content-project__overlay"></div>
 									<img class="content-project__image" src="<?php echo esc_url($featured_image_url); ?>">
-									<h2 class="pad-top"><?php the_title(); ?></h2> 
+									<h2 class="pad-top content-project__title"><?php the_title(); ?></h2> 
 								</div>
 							</a>
 							<?php
@@ -126,7 +126,7 @@
 								<div class="content-project__container content-project__container--yellow">
 									<div class="content-project__overlay"></div>
 									<img class="content-project__image content-project__image--graphics" src="<?php echo esc_url($featured_image_url); ?>">
-									<h2 class="pad-top"><?php the_title(); ?></h2> 
+									<h2 class="pad-top content-project__title"><?php the_title(); ?></h2> 
 								</div>
 							</a>
 							<?php
@@ -136,7 +136,7 @@
 						
 					?>
 				</div>
-				<div>
+				<div class="color color-dark-blue">
 					<p class="pad-top pad-bot centered"><a href="#top">Back to top</a></p>
 				</div>
 			</div>

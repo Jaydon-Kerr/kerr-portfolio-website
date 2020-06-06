@@ -48,7 +48,7 @@ Retn:	none
 --------------------------------------------------------------------*/
 function jServiceGet()
 {
-	jQuery.getJSON("http://jservice.io/api/random", /* no settings needed since this is only requesting one random question */ function(response)
+	jQuery.getJSON("https://jservice.io/api/random", /* no settings needed since this is only requesting one random question */ function(response)
 		{
 			console.log(response);
 			jServiceDisplay(response);

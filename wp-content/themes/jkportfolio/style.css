@@ -356,7 +356,7 @@ content-project styles start
 =====================================================================
 */
 .content-project {
-  color: white;
+  /*color: white;*/
   text-align: center;
 }
 /* Elements */
@@ -379,24 +379,30 @@ content-project styles start
   opacity: 0;
   transition: opacity .5s;
 }
+.content-project__title {
+  color: #4ac3be;
+}
 /* Modifiers */
 .content-project--no-margin {
   margin-top: 0em;
 }
 .content-project--teal {
   background-color: #4ab38a;
+  color: #1d1d35;
 }
 .content-project__container--teal {
   background-color: #1d1d35;
 }
 .content-project--green {
   background-color: #98da7e;
+  color: #1e231c;
 }
 .content-project__container--green {
   background-color: #1e231c;
 }
 .content-project--yellow {
   background-color: #e1c864;
+  color: #3a362b;
 }
 .content-project__container--yellow {
   background-color: #3a362b;
@@ -440,9 +446,13 @@ about styles start
 =====================================================================
 */
 /* Blocks */
+.about {
+  background-color: #2e373e;
+}
 /* Elements */
 .about img {
   width: 20em;
+  height: 20em;
   float: left;
   padding-right: 1em;
 }
@@ -463,7 +473,15 @@ about styles start
   padding-top: .5em;
   font-size: 16px;
 }
-/* Modifiers */
+/* resizing adaptability */
+@media only screen and (max-width: 900px) {
+  .about img {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 1em;
+    float: none;
+  }
+}
 /*
 about styles end
 =====================================================================
@@ -676,6 +694,9 @@ misc styles start
 .col-20 {
   width: 20%;
   float: left;
+}
+.color-dark-blue {
+  background-color: #2e373e;
 }
 /*
 misc styles end
